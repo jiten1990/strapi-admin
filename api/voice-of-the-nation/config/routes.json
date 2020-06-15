@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/voice-of-the-nations",
+      "handler": "voice-of-the-nation.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/voice-of-the-nations/count",
+      "handler": "voice-of-the-nation.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/voice-of-the-nations/:id",
+      "handler": "voice-of-the-nation.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/voice-of-the-nations",
+      "handler": "voice-of-the-nation.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/voice-of-the-nations/:id",
+      "handler": "voice-of-the-nation.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/voice-of-the-nations/:id",
+      "handler": "voice-of-the-nation.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

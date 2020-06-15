@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ourvalues",
+  "info": {
+    "name": "ourvalue"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "coverimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "provider": "cloudinary",
+    "providerOptions": {
+      "cloud_name": "dkplc2mbj",
+      "api_key": "544165141324849",
+      "api_secret": "P-FiNrMNLvq_oouipAQDs_pH-vo"
+    }
+  }

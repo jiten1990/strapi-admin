@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fact_checks",
+  "info": {
+    "name": "FactCheck"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "published_date": {
+      "type": "date",
+      "required": true
+    },
+    "video_thumbnail": {
+      "type": "string"
+    },
+    "video_link": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "congress_sandeshes",
+  "info": {
+    "name": "Congress Sandesh"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "expert": {
+      "type": "text"
+    },
+    "Publish": {
+      "type": "date"
+    },
+    "congress_sandesh_categories": {
+      "collection": "congress-sandesh-categories",
+      "via": "congress_sandeshes",
+      "dominant": true
+    },
+    "FeatureImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

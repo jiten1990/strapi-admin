@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "keyissues",
+  "info": {
+    "name": "keyissue"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "coverimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "keyissuecategories": {
+      "collection": "keyissuecategory",
+      "via": "keyissues"
+    },
+    "sub_title": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fact-checks",
+      "handler": "fact-check.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fact-checks/count",
+      "handler": "fact-check.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fact-checks/:id",
+      "handler": "fact-check.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fact-checks",
+      "handler": "fact-check.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fact-checks/:id",
+      "handler": "fact-check.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fact-checks/:id",
+      "handler": "fact-check.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/incconstitution",
+      "handler": "incconstitution.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/incconstitution",
+      "handler": "incconstitution.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/incconstitution",
+      "handler": "incconstitution.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

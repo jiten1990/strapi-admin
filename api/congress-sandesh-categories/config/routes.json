@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/congress-sandesh-categories",
+      "handler": "congress-sandesh-categories.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/congress-sandesh-categories/count",
+      "handler": "congress-sandesh-categories.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/congress-sandesh-categories/:id",
+      "handler": "congress-sandesh-categories.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/congress-sandesh-categories",
+      "handler": "congress-sandesh-categories.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/congress-sandesh-categories/:id",
+      "handler": "congress-sandesh-categories.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/congress-sandesh-categories/:id",
+      "handler": "congress-sandesh-categories.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

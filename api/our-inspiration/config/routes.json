@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/our-inspirations",
+      "handler": "our-inspiration.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/our-inspirations/count",
+      "handler": "our-inspiration.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/our-inspirations/:id",
+      "handler": "our-inspiration.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/our-inspirations",
+      "handler": "our-inspiration.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/our-inspirations/:id",
+      "handler": "our-inspiration.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/our-inspirations/:id",
+      "handler": "our-inspiration.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

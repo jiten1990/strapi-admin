@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "india_at70_s",
+  "info": {
+    "name": "IndiaAt70"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "published_date": {
+      "type": "date"
+    },
+    "video_thumbnail": {
+      "type": "string",
+      "required": true
+    },
+    "video_link": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

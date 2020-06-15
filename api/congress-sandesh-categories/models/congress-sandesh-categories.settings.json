@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "congress_sandesh_categories",
+  "info": {
+    "name": "Congress Sandesh Categories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Category": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Category"
+    },
+    "congress_sandeshes": {
+      "via": "congress_sandesh_categories",
+      "collection": "congress-sandesh"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/congress-sandeshes",
+      "handler": "congress-sandesh.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/congress-sandeshes/count",
+      "handler": "congress-sandesh.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/congress-sandeshes/:id",
+      "handler": "congress-sandesh.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/congress-sandeshes",
+      "handler": "congress-sandesh.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/congress-sandeshes/:id",
+      "handler": "congress-sandesh.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/congress-sandeshes/:id",
+      "handler": "congress-sandesh.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

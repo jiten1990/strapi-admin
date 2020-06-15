@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "voice_of_the_nations",
+  "info": {
+    "name": "VoiceOfTheNation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "published_date": {
+      "type": "date",
+      "required": true
+    },
+    "video_thumbnail": {
+      "type": "string",
+      "required": true
+    },
+    "video_link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

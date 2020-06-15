@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/india-at-70-s",
+      "handler": "india-at70.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/india-at-70-s/count",
+      "handler": "india-at70.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/india-at-70-s/:id",
+      "handler": "india-at70.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/india-at-70-s",
+      "handler": "india-at70.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/india-at-70-s/:id",
+      "handler": "india-at70.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/india-at-70-s/:id",
+      "handler": "india-at70.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

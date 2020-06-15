@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "keyissuecategories",
+  "info": {
+    "name": "keyissuecategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "keyissues": {
+      "via": "keyissuecategories",
+      "collection": "keyissue",
+      "dominant": true
+    }
+  }
+}
